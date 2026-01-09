@@ -20,3 +20,9 @@ TODOs.md
 package-lock.json
 bun.lock
 pnpm-lock.yaml
+
+.env
+.env.local
+.env.development
+.env.production
+.env.test
