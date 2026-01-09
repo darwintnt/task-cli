@@ -1,28 +1,43 @@
-!**/glob-import/dir/node_modules
-.DS_Store
-.idea
-.pnpm-store
-*.cpuprofile
-*.local
-*.log
-/.vscode/
-/docs/.vitepress/cache
-/packages/vite/LICENSE
+# Dependencies
+node_modules/
+vendor/
+__pycache__/
 dist
-dist-ssr
-explorations
-node_modules
-playground-temp
-temp
-TODOs.md
-.eslintcache
-.history
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+logs/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
 package-lock.json
 bun.lock
 pnpm-lock.yaml
 
-.env
-.env.local
+# Environment variables
+**/.env
+**/.env.local
+
+# Environment files for diferentes entornos
 .env.development
 .env.production
+.env.staging
 .env.test
+
+# Pero mantener archivos de ejemplo
+!.env.example
+!.env.sample
